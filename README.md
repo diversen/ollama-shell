@@ -46,5 +46,4 @@ If you are satisfied with the answer you can press `Ctrl + Shift + V` to paste t
 ## License
 
 MIT
-# ollama-shell
-# ollama-shell
+
