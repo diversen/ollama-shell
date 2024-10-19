@@ -24,18 +24,22 @@ E.g.:
 
 Copy and paste the model you want to use into the config file. The config file is located in `~/.config/ollama-shell/config.yaml`.
 
+## Ask a question
+
 Now ask a question:
 
-    ollama-shell -q "Using apt how do I search for a package on linux?"
+    ollama-shell -q "find all json files in current folder"
 
 The above command may return something like this:
 
-    Replace '<package_name>' with the name of the package you are searching for.
-    This command will return a list of packages that match your search query.
+    This command searches for JSON files in the current directory and its
+    subdirectories. The '.' specifies the current directory, '-type f' indicates
+    that we are looking for files, and '-name '*.json'' filters for files with a
+    '.json' extension.
 
     This following command has been copied to your clipboard:
 
-    apt-cache search <package_name>
+    find . -type f -name '*.json'
 
 If you are satisfied with the answer you can press `Ctrl + Shift + V` to paste the command into your terminal.
 
@@ -46,4 +50,3 @@ If you are satisfied with the answer you can press `Ctrl + Shift + V` to paste t
 ## License
 
 MIT
-
